@@ -1,0 +1,65 @@
+/*Banner Section */
+
+.banner-section{
+    background-image: url("../images/home.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+
+.wrap-text{
+    font-family: 'CharukolaUltraLight', sans-serif;
+    display: block;
+    text-align: center;
+    padding-top: 200px;
+    font-weight: bold;
+}
+
+.wrap-text h1{
+    font-size: 70px;
+    font-weight: 500;
+    padding-bottom: 30px;
+}
+
+.wrap-text p{
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.intro-section {
+    background-color: darkblue;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+    width: 100%;
+}
+
+.createcoursebg-section {
+    background-color: darkblue;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: fit-content;
+    width: 100%;
+}
+
+.darkbg-section {
+    background-image: url("../images/dark.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: max-content;
+    width: 100%;
+}
+
+.lightbg-section {
+    background-image: url("../images/light.jpeg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: max-content;
+    width: 100%;
+}

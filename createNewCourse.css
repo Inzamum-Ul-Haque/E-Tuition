@@ -1,0 +1,32 @@
+/*create course section for bg-image */
+
+#intro{
+    background: url("../images/create-course.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 90vh;
+    width: 100%;
+}
+
+.display-heading{
+    font-family: 'Open Sans', sans-serif;
+    justify-content: center;
+    text-align: center;
+    color: rgb(22, 15, 54);;
+    font-size: 70px;
+    padding-bottom: 20px;
+    padding-top: 150px;
+    font-weight: 600;
+}
+
+.sub-heading{
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    justify-content: center;
+    color: rgb(22, 15, 54);
+    font-size: 35px;
+    font-weight: 00;
+    padding-bottom: 30px;
+}

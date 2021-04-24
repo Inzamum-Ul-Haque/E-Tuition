@@ -1,0 +1,57 @@
+﻿.payment-body {
+    font-family: 'Open Sans',sans-serif;
+}
+
+.payments-panel .recent {
+    margin-top: 80px;
+    margin-bottom: 3rem;
+}
+
+.payments-panel .activity-grid{
+    display: grid;
+}
+
+.payments-panel .activity-card {
+    background: #fff;
+    border-radius: 7px;
+}
+
+.payments-panel h3 {
+    margin: 1rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.payments-panel table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.payments-panel thead {
+    background: #efefef;
+    text-align: center;
+}
+
+.payments-panel th,
+..payments-panel td {
+    font-size: 0.9rem;
+    padding: 1rem 1rem;
+    font-weight: 200;
+}
+
+.payments-panel td {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.payments-panel tbody tr:nth-child(even) {
+    background: #f9fafc;
+}
+
+.payments-panel .paid {
+    color: green;
+}
+
+.payments-panel .not-paid {
+    color: red;
+}

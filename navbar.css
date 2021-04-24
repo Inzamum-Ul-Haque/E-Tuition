@@ -1,0 +1,101 @@
+/*Navbar Section*/
+
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+#logo-subtitle{
+    font-size: 13px;
+}
+
+.book1{
+    width: 30px;
+    height: 40px;
+}
+.book2{
+    width: 30px;
+    height: 40px;
+}
+
+nav{
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    min-height: 10vh;
+    align-items: center;
+    font-family: 'Gochi Hand', cursive;
+    background-color: #DDDD3A;
+}
+
+nav .logo{
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: 'CharukolaUltraLight', sans-serif;
+}
+
+nav .logo a{
+    list-style-type: none;
+    cursor: pointer;
+}
+
+nav .logo a:hover{
+    opacity: 0.7;
+}
+
+nav .nav-links{
+    display: flex;
+    justify-content: space-between;
+    width: 32%;
+}
+
+nav .burger{
+    font-size: 20px;
+    display: none;
+    cursor: pointer;
+}
+
+nav .nav-links a{
+    font-size: 22px;
+
+    font-weight: normal;
+    cursor: pointer;
+}
+
+@media all and (max-width: 768px){
+    nav .burger{
+        display: block;
+    }
+
+    nav .nav-links{
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        background: #bbbb1c;
+        padding: 40px;
+        width: 50%;
+        transform: translateX(-500px);
+        transition: 0.5s ease-in-out;
+    }
+
+    nav .nav-links li {
+        padding: 25px;
+        border-bottom: 1px solid black;
+    }
+
+    nav .nav-links li:last-of-type{
+        border-bottom: 0px solid black;
+    }
+/*
+    nav .nav-links a:hover{
+        border-bottom: 0px solid black;
+
+    }
+    */
+}

@@ -1,0 +1,206 @@
+
+.btn{
+    padding: 0.5rem 1 rem;
+    background: #006669;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+}
+
+.btn:hover{
+    color: white  !important;
+    background: #005255;
+}
+
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.content{
+    width:90%;
+    margin: 30px auto 30px;
+}
+
+.content .main-content{
+    width: 70%;
+    float: left;
+}
+
+.content .main-content .post{
+    width:95%;
+    height: 270px;
+    margin: 20px auto;
+    border-radius: 5px;
+    background: #fbfbf8;
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.content .main-content .post .read-more{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    border: 1px solid #005255;
+    background: transparent;
+    border-radius: 0px;
+    color: #005255 !important;
+}
+
+.content .main-content .post .read-more:hover{
+    background: #006669;
+    color: white !important;
+    transition: 0.25s;
+}
+
+.content .main-content .post .post-image{
+    width: 40%;
+    height: 100%;
+    float: left;
+}
+
+.post-preview a{
+    text-decoration: none;
+    color:white;
+}
+
+.post .post-preview .preview-text{
+    padding-top: 10px;
+}
+
+.content .main-content .post .post-preview{
+    width: 60%;
+    padding: 10px;
+    float: right;
+}
+
+.content .main-content .recent-posts-title{
+    margin: 20px;
+    color: #000080;
+    font-family: 'Gorditas', cursive;
+}
+
+.content .sidebar{
+    width: 30%;
+    float: left;
+    height: 300px;
+}
+
+#course-title{
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.content .sidebar .section{
+    background: #f9f9f3;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.section-title{
+    color: #000080;
+    margin: 10px 0px 10px 0px;
+    font-family: 'Gorditas', cursive;
+}
+
+.content .sidebar .section.topics{
+    margin-top: 80px;
+}
+
+.content .sidebar .section.topics ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    border-top: 1px solid #e0e0e0;
+    font-family: 'Gochi Hand', cursive;
+}
+
+.content .sidebar .section.topics ul li a{
+    display: block;
+    padding: 15px 0px 15px 0px;
+    border-bottom: 1px solid #e0e0e0;
+    text-decoration: none;
+    color: black;
+    transition: all 0.3s;
+}
+
+.content .sidebar .section.topics ul li a:hover{
+    color: teal;
+    padding-left: 20px;
+    transition: all 0.3s;
+}
+
+#moving-text {
+    font-family: 'CharukolaUltraLight', sans-serif;
+    margin: 5px;
+    font-weight: 800;
+}
+
+.createcourse-section {
+    background-image: url("../images/specialcoursehome.jpeg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: max-content;
+    width: 100%;
+}
+
+
+
+.studenthome-section {
+    background-image: url("../images/studenthome.jpeg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: max-content;
+    width: 100%;
+}
+
+.specialcourse-section {
+    background-image: url("../images/studenthome.jpeg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: max-content;
+    width: 100%;
+}
+
+/*search section */
+
+#st {
+    margin-top: 30px;
+}
+
+    #st input[type=text] {
+        width: 130px;
+        box-sizing: border-box;
+        border: 2px solid #DDDD3A;
+        border-radius: 4px;
+        font-size: 16px;
+        background-color: white;
+        background-image: url('https://img.icons8.com/android/24/000000/search.png');
+        background-position: 10px 10px;
+        background-repeat: no-repeat;
+        padding: 12px 20px 12px 40px;
+        -webkit-transition: width 0.4s ease-in-out;
+        transition: width 0.4s ease-in-out;
+    }
+
+        #st input[type=text]:focus {
+            width: 100%;
+            border: 2px solid #DDDD3A;
+        }
+
+/*search section */
+
+
+.teachercoursedetails-section {
+    background-image: url("../images/bg_01.jpeg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: max-content;
+    width: 100%;
+}

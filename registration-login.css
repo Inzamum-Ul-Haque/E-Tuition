@@ -1,0 +1,87 @@
+/*Registration-Login*/
+
+.loginform {
+    width: 100%;
+    max-width: 400px;
+    padding: 15px;
+    margin: auto;
+    height: 100%;
+}
+
+.loginform h2{
+    padding-top: 10%;
+    font-family: 'Gochi Hand', cursive;
+    font-size: 50px;
+}
+
+#dont-have-acc p{
+    font-family: 'Gochi Hand', cursive;
+    font-size: 30px;
+}
+
+.registrationform {
+    width: 100%;
+    max-width: 400px;
+    padding: 15px;
+    margin: auto;
+    height: 100%;
+}
+
+#register-btn{
+    margin-top: 25px;
+}
+
+#register-heading{
+    padding-top: 20px;;
+}
+
+.login-section{
+    background-image: url("../images/login.jpeg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 90vh;
+    width: 100%;
+}
+
+.registration-section{
+    background-image: url("../images/register.jpeg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 115vh;
+    width: 100%;
+}
+
+#dont-have-acc{
+    font-size: 25px;
+    font-weight: 500;
+}
+
+#apply-instructor-heading{
+    font-size: 45px;
+    font-weight: 600;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+#apply-sub-heading{
+    font-size: 25px;
+    font-weight: 400;
+    padding-bottom: 30px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+#submit-btn{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.reg-form{
+    line-height: 1.5em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}

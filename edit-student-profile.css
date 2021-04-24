@@ -1,0 +1,42 @@
+/*Student-profile*/
+
+.studentprofileform {
+    width: fit-content;
+    max-width: auto;
+    padding: 15px;
+    margin: auto;
+    height: auto;
+}
+
+.studentprofileform h2{
+    padding-top: 10%;
+}
+
+.r-btn{
+    margin: auto;
+    align-self: center;
+    width: fit-content;
+    height: max-content;
+}
+
+
+
+.studentprofile-section{
+    background-image: url("../images/register.jpeg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: max-content;
+    width: 100%;
+}
+
+.studentprofilephoto-section{
+    margin: auto;
+    
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 30vh;
+    width: 30vh;
+}
+

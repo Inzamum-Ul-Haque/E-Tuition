@@ -1,0 +1,50 @@
+body {
+    background: #e7e7e7;
+    }
+    .insidecoursebanner {
+    align-self: center;
+    padding: 10px;
+    margin:20px;
+    margin-left: 5%;
+    background-image: url("../images/insidecourse.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: repeat;
+    height: 600px;
+    border-radius: 30px;
+    box-shadow: 10px 10px 10px
+    rgba(0,0,0,.2);
+    display: flex;
+    max-width: 90%;
+    width: 90%;
+    max-height: 100%;
+    top: 50%;
+    }
+
+    .insidecourseinfo {
+        padding: 30px;
+        position: relative;
+        width: 100%;
+        }
+
+        .details {
+            font-family: 'Open Sans', sans-serif;
+            opacity: .8;
+            text-align: center;
+            color: #000;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            padding: auto;
+            font-size: 30px;
+            padding-bottom: 10px;
+        }
+        .coursename {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        padding: auto;
+        font-size: 80px;
+        text-align: center;
+        color: #000;
+        letter-spacing: 1px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        }    

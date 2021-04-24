@@ -1,0 +1,125 @@
+import { Link, NavLink, Route, Switch } from 'react-router-dom'
+import { Button, Form, FormGroup, Label, Input, CustomInput } from 'reactstrap';
+import React, { Component, Fragment } from "react";
+import "../css/studentcoursedetails.css"
+import "../css/navbar.css";
+import { Container } from 'reactstrap';
+import axios from 'axios';
+
+class StudentCourseFileDetails extends Component {
+
+
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            pdfname: '',
+            course: [],
+            resource: [],
+            CourseId: localStorage.getItem('courseid'),
+            ResourceType: '',
+            ResourceDetails: ''
+        };
+
+    }
+    componentDidMount() {
+
+        fetch('api/course/getacourse', {
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+            body: parseInt(localStorage.getItem('courseid'))
+
+        }).then(res => res.json())
+            .then(course => this.setState({ course }, () => console.log("done", course)));
+
+        fetch('api/resource/getfileresource', {
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+            body: parseInt(localStorage.getItem('courseid'))
+
+        }).then(res => res.json())
+            .then(resource => this.setState({ resource }, () => console.log("done", resource)));
+
+    }
+
+    changeHandler = e => {
+        this.setState({ [e.target.name]: e.target.value })
+    }
+
+
+    
+
+   
+    
+
+    downloadPdf = param => e => {
+        const options = {
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            }
+        };
+        console.log({ Cv: param })
+        axios.post("https://localhost:44393/api/FileUpload/downloadpdf", { Cv: param }, options).then(response => {
+            let blob = new Blob([response.data], { type: 'application/octet-stream' })
+            let ref = this.state.ref
+            ref.current.href = URL.createObjectURL(blob)
+            ref.current.download = param
+            ref.current.click()
+        })
+    }
+
+
+
+    render() {
+
+        const { ResourceType, ResourceDetails } = this.state
+    return (
+        <div class="teachercoursedetails-section">
+            <div class="coursedetails">
+                {this.state.course?.map(course =>
+                    <div class="info" key={course.courseId}>
+                    <div class="progress-wrapper">
+                    <Link to="./student-course-details">
+                        <button id="create-course-btn" class="col-md-12" className="r-btn btn-lg btn-warning btn-block" >Go to materials</button>
+                    </Link>
+                        </div>
+                        <h2> {course.courseName}</h2>
+                        <p class="p-trunc">
+                            <h5>{course.courseDescription}</h5>
+                        </p>
+                        <h6>Teacher: {course.teacherName}</h6>
+                        <h6>Created Date: {course.courseCreatedDate}</h6>
+
+                    </div>
+                )}
+            </div>
+            <div>
+                <div class="coursecontent clearfix">
+                    <div class="main-content">
+                                
+                        <h7 class="text-center">Recent Course Materials</h7>
+                        {this.state.resource?.map(resource =>
+                            <div class="course" key={resource.resourceId}>
+                                <div class="info">
+                                    <h6>  {resource.resourceType} </h6>
+                                    <button id="create-course-btn" className="r-btn btn-info btn-sm" onClick={this.downloadPdf( resource.resourceDetails )} >Download file</button>
+                                </div>
+                            </div>
+                        )}
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
+}
+}
+
+export default StudentCourseFileDetails;

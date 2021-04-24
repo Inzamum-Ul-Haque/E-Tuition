@@ -1,0 +1,71 @@
+
+body {
+background: #e7e7e7;
+}
+.specialcourse {
+background: #fff;
+border-radius: 10px;
+box-shadow: 0px 10px 10px
+rgba(0,0,0,.2);
+display: flex;
+max-width: 135%;
+width: 135%;
+padding: 10px;
+margin: 10px;
+align-self: center;
+top: 50%;
+left: 50%;
+}
+
+
+
+.specialcourse h6 {
+opacity: .6;
+letter-spacing: 1px;
+text-transform: uppercase;
+}
+.specialcourse h2 {
+letter-spacing: 1px;
+}
+.specialcoursepreview {
+background: #e40046;
+color: #fff;
+padding: 30px;
+}
+.specialcoursepreview a {
+color: #fff;
+font-size: 12px;
+opacity: .6;
+margin-top: 30px;
+text-decoration: none;
+}
+
+.specialcoursebtn-red {
+    background: #e40046;
+    width: 20%;
+    height: 30%;
+    height: fit-content;
+    border-radius: 0.45rem;
+    float: right;
+    text-align: center;
+    color: white;
+    font-size: large;
+}
+
+
+
+
+.specialcourseinfo {
+padding: 30px;
+position: relative;
+width: 100%;
+}
+
+.specialcourse-section{
+    background-image: url("../images/studenthome.jpeg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: max-content;
+    width: 100%;
+}

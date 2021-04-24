@@ -1,0 +1,40 @@
+/*Teacher-profile*/
+
+.teacherprofileform {
+    width: 100%;
+    max-width: auto;
+    padding: 15px;
+    margin: auto;
+    height: auto;
+}
+
+.teacherprofileform h2{
+    padding-top: 10%;
+}
+
+.r-btn{
+    margin: auto;
+    align-self: center;
+    width: fit-content;
+    height: max-content;
+}
+
+
+.teacherprofile-section{
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: max-content;
+    width: 100%;
+}
+
+.teacherprofilephoto-section{
+    margin: auto;
+    
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 30vh;
+    width: 30vh;
+}
+

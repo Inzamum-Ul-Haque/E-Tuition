@@ -1,0 +1,78 @@
+﻿.student-details-body {
+    font-family: 'Open Sans',sans-serif;
+}
+
+.student-details-panel .recent {
+    margin-top: 80px;
+    margin-bottom: 3rem;
+}
+
+.student-details-panel .activity-grid {
+    display: grid;
+}
+
+.student-details-panel .activity-card {
+    background: #fff;
+    border-radius: 7px;
+}
+
+.student-details-panel h3 {
+    margin: 1.5rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.student-details-panel h5 {
+    margin: 1rem;
+    text-align: center;
+    font-weight: 400;
+}
+
+.student-details-panel table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.student-details-panel thead {
+    background: #efefef;
+    text-align: center;
+}
+
+.student-details-panel th,
+.student-details-panel td {
+    font-size: 1rem;
+    padding: 1rem 1rem;
+    font-weight: 200;
+}
+
+.student-details-panel td {
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.student-details-panel tbody tr:nth-child(even) {
+    background: #f9fafc;
+}
+
+.student-details-panel button {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.7rem;
+    margin: 1px 1px;
+    cursor: pointer;
+    border-radius: 10%;
+}
+
+.student-details-panel .enroll-btn {
+    background: green;
+}
+.student-details-panel .enroll-btn:hover {
+        background: white;
+        color: green;
+        border: 0.5px green solid;
+        transition: 0.3s ease-in-out;
+}

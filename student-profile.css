@@ -1,0 +1,71 @@
+/*Student-profile*/
+
+.studentprofileform {
+    width: fit-content;
+    max-width: auto;
+    padding: 15px;
+    margin: auto;
+    height: auto;
+}
+
+.studentprofileform h2{
+    padding-top: 10%;
+}
+
+.r-btn{
+    margin: auto;
+    align-self: center;
+    width: max-content;
+    height: max-content;
+}
+
+.studentprofile-section{
+    background-image: url("../images/register.jpeg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: max-content;
+    width: 100%;
+}
+
+.studentprofilephoto-section{
+    margin: auto;
+   
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 30vh;
+    width: 30vh;
+}
+
+.profile-text{
+    font-family: 'CharukolaUltraLight', sans-serif;
+    display: block;
+    text-align: center;
+    padding-top: 30px;
+    font-weight: bold;
+    width: fit-content;
+}
+
+.input-text{
+    font-family: 'CharukolaUltraLight', sans-serif;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    width: fit-content;
+}
+
+.wrapper-texts{
+    background-color:white;
+    align-self: center;
+    padding: 20px;
+    margin-bottom: 1%;
+}
+
+.wrapper-texts:hover{
+    box-shadow: 5px 5px 5px #c0c6c9;
+}
+
+.wrapper-texts a{
+    text-decoration: none;
+}

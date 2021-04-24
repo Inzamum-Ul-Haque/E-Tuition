@@ -1,0 +1,103 @@
+
+body {
+background: #e7e7e7;
+}
+.course {
+background: #fff;
+border-radius: 10px;
+box-shadow: 0px 10px 10px
+rgba(0,0,0,.2);
+display: flex;
+max-width: 135%;
+width: 135%;
+padding: 10px;
+margin: 10px;
+align-self: center;
+top: 50%;
+left: 50%;
+}
+
+
+
+.course h6 {
+opacity: .6;
+letter-spacing: 1px;
+text-transform: uppercase;
+}
+.course h2 {
+letter-spacing: 1px;
+}
+.preview {
+background: #002ba0;
+color: #fff;
+padding: 30px;
+}
+.preview a {
+color: #fff;
+font-size: 12px;
+opacity: .6;
+margin-top: 30px;
+text-decoration: none;
+}
+
+.btn-red {
+    background: #002ba0;
+    width: 20%;
+    height: 30%;
+    height: fit-content;
+    border-radius: 0.45rem;
+    float: right;
+    text-align: center;
+    color: white;
+    font-size: large;
+}
+
+
+
+
+.info {
+padding: 30px;
+position: relative;
+width: 100%;
+}
+
+.studentyourcourses-section{
+    background-image: url("../images/studenthome.jpeg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: max-content;
+    width: 100%;
+}
+
+.progress-wrapper {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    text-align: right;
+    width: 150px;
+    }
+
+.progress {
+    background: #ddd;
+    border-radius: 3px;
+    height:10px;
+    width:100%;
+    }
+    
+.progress::after {
+    content: '';
+    border-radius: 3px;
+    background: #002ba0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 10px;
+    width: 36%;
+}
+
+.progress-text{
+    font-size: 15px;
+    opacity: 5;
+    letter-spacing: 1px;
+}
